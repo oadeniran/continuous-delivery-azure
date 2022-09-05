@@ -11,6 +11,7 @@ if [ "$1" = "--pull-first" ]
 then
     echo "Merging main into $PR_BRANCH"
     git fetch --all
+    git pull
     git checkout -b $PR_BRANCH
     git pull origin main --no-rebase -X theirs --no-edit
     git push origin $PR_BRANCH
