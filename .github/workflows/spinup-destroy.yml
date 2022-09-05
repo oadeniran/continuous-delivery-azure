@@ -10,9 +10,9 @@ env:
   ### Replace <username> with GitHub username ###
   ###############################################
   AZURE_RESOURCE_GROUP: cd-with-actions
-  AZURE_APP_PLAN: <username>-ttt-deployment
+  AZURE_APP_PLAN: oadeniran-ttt-deployment
   AZURE_LOCATION: '"Central US"'
-  AZURE_WEBAPP_NAME: <username>-ttt-app
+  AZURE_WEBAPP_NAME: oadeniran-ttt-app
   ###############################################
   
 jobs:
