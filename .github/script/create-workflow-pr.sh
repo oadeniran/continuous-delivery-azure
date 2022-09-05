@@ -20,4 +20,4 @@ else
     git push origin $PR_BRANCH
 fi
 echo "Create pull request for $PR_BRANCH into main"
-gh pr create -fill --head=oadeniran:$PR_BRANCH --title="$PR_TITLE" --body=""
+gh pr create --head=oadeniran:$PR_BRANCH --title="$PR_TITLE" --body=""
