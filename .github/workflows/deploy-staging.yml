@@ -66,7 +66,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ github.actor }}/deployment:latest
+          tags: deployment-latest
           labels: ${{ steps.meta.outputs.labels }}
           secrets: |
             GIT_AUTH_TOKEN=${{ secrets.CR_PAT }}
