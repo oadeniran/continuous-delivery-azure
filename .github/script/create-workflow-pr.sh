@@ -13,7 +13,11 @@ then
     git checkout $PR_BRANCH
     git pull origin main --no-rebase -X theirs --no-edit
     git push origin $PR_BRANCH
+else
+    echo "Merging main into $PR_BRANCH"
+    git checkout $PR_BRANCH
+    git pull origin main --no-rebase -X theirs --no-edit
+    git push origin $PR_BRANCH
 fi
-
 echo "Create pull request for $PR_BRANCH into main"
-gh pr create --base main --head $PR_BRANCH --title "$PR_TITLE" --body ""
+gh pr create -fill --head=oadeniran:$PR_BRANCH --title="$PR_TITLE" --body=""
