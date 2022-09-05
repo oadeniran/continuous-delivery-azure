@@ -1,5 +1,3 @@
-###init
-
 name: Deploy to staging
 
 on:
