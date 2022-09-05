@@ -57,7 +57,7 @@ jobs:
         with:
           images: ${{env.IMAGE_REGISTRY_URL}}/${{ github.repository }}/${{env.DOCKER_IMAGE_NAME}}
           tags: |
-            type=sha,format=short,prefix=""
+            type=sha,format=short
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v2.10.0
