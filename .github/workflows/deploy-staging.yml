@@ -68,8 +68,6 @@ jobs:
           push: true
           tags: deployment-latest
           labels: ${{ steps.meta.outputs.labels }}
-          secrets: |
-            GIT_AUTH_TOKEN=${{ secrets.GITHUB_TOKEN }}
 
   Deploy-to-Azure:
     runs-on: ubuntu-latest
