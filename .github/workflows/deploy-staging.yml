@@ -66,10 +66,10 @@ jobs:
         with:
           context: .
           push: true
-          tags:  docker.io/library/deployment-latest
+          tags: deployment-latest
           labels: ${{ steps.meta.outputs.labels }}
           secrets: |
-            GIT_AUTH_TOKEN=${{ secrets.CR_PAT }}
+            GIT_AUTH_TOKEN=${{ secrets.GITHUB_TOKEN }}
 
   Deploy-to-Azure:
     runs-on: ubuntu-latest
