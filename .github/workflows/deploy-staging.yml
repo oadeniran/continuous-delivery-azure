@@ -56,17 +56,14 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3.7.0
         with:
-          images: ${{env.IMAGE_REGISTRY_URL}}/${{ env.IMAGE_NAME }}/${{env.DOCKER_IMAGE_NAME}}
-          tags: |
-            # dynamically set the branch name and sha as a custom tag
-            type=match,pattern=v(.*),group=1,value=v1.0.0
+          images: ${{env.IMAGE_REGISTRY_URL}}/${{ env.IMAGE_NAME }}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
           context: .
           push: true
-          tags: docker.io/library/deployment-latest
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
   Deploy-to-Azure:
