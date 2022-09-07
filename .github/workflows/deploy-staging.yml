@@ -66,7 +66,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: deployment-latest
+          tags: docker.io/library/deployment-latest
           labels: ${{ steps.meta.outputs.labels }}
 
   Deploy-to-Azure:
