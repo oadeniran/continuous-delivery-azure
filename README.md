@@ -270,7 +270,7 @@ We won't be going into detail on the steps of this workflow, but it would be a g
 </details>
 
 
-<details id=3 open>
+<details id=3>
 <summary><h2>Step 3: Spin up an environment based on labels</h2></summary>
 
 ### Nicely done! 
@@ -481,7 +481,7 @@ Great! The syntax you used tells GitHub Actions to only run that workflow when a
 
 </details>
 
-<details id=6>
+<details id=6 open>
 <summary><h2>Step 6: Production deployment</h2></summary>
 
 ### Nice work!
