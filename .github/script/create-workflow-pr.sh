@@ -9,6 +9,7 @@ git config user.email github-actions@github.com
 # before creating pull request
 if [ "$1" = "--pull-first" ]
 then
+    echo "Merging main into $PR_BRANCH"
     git checkout -b $PR_BRANCH
     git pull origin main --no-rebase -X theirs --no-edit
     git push origin $PR_BRANCH
