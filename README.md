@@ -481,7 +481,7 @@ Great! The syntax you used tells GitHub Actions to only run that workflow when a
 
 </details>
 
-<details id=6 open>
+<details id=6>
 <summary><h2>Step 6: Production deployment</h2></summary>
 
 ### Nice work!
@@ -505,7 +505,7 @@ Throughout the course you've spun up resources that, if left unattended, could i
   Review what we learned, ask for feedback, provide next steps.
 -->
 
-<details id=7>
+<details id=7 open>
 <summary><h2>Finish</h2></summary>
 
 ### Congratulations, you've completed this course!
